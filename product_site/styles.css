@@ -1,0 +1,29 @@
+/* background + all default text */
+body {
+  background-color: rgb(22, 22, 89);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;  /* makes all text white */
+  text-align: center; /* center all the text */
+}
+
+/* headline  */
+h1 {
+  font-size: 32px;
+}
+
+/* paragraphs  */
+p {
+  font-size: 16px;
+}
+
+/* Class selector */
+.highlight {
+  color: yellow;
+}
+
+/* ID selector */
+#special-heading {
+  color: lightgreen;
+}
+
+    
