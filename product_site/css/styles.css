@@ -2,7 +2,7 @@
 body {
   background-color: rgb(22, 22, 89);
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);  /* makes all text white */
+  color: rgb(0, 0, 0);  /* makes all text black */
   text-align: center; /* center all the text */
 }
 
@@ -16,7 +16,7 @@ p {
   font-size: 16px;
 }
 
-/* Class selector */
+/* class selector */
 .highlight {
   color: yellow;
 }
@@ -25,14 +25,14 @@ p {
 #special-heading {
   color: lightgreen;
 }
-/* Header container */
+/* header container */
 .header {
   background-color: navy;   /* change background */
   overflow: hidden;         /* keeps content clipped properly */
   padding: 15px;            /* spacing inside the header */
 }
 
-/* Logo styling */
+/* logo styling */
 .logo {
   float: left;
   color: white;
@@ -40,7 +40,7 @@ p {
   margin-right: 20px;
 }
 
-/* Navigation links */
+/* navigation links */
 .header nav a {
   float: right;
   text-decoration: none;
@@ -49,18 +49,18 @@ p {
   padding: 10px 15px;
 }
 
-/* Hover effects */
+/* hover effects */
 .header nav a:hover {
   background-color: white;
   color: navy;
 }
 
-/* Active (current) page link */
+/* active (current) page link */
 .header nav a.active {
   background-color: lightgray;
   color: black;
 }
-/* Main content box */
+/* main content box */
 .content {
   width: 80%;                /* takes 80% of screen */
   margin: 20px auto;         /* centers content */
@@ -70,36 +70,36 @@ p {
   overflow: auto;            /* handles floats/images */
 }
 
-/* Float example for images */
+/* float example for images */
 .content img {
   float: right;       /* pushes images to the right */
   margin: 10px;       /* adds space around images */
 }
 
-/* Headings inside content */
+/* headings inside content */
 .content h1, 
 .content h2, 
 .content h3 {
   color: navy;
 }
-/* General image styling */
+/* general image styling */
 .content img {
   margin: 10px;       /* adds space around images */
   max-width: 300px;   /* keeps images a good size */
   height: auto;
 }
 
-/* Float left */
+/* cloat left */
 .img-left {
   float: left;
 }
 
-/* Float right */
+/* cloat right */
 .img-right {
   float: right;
 }
 
-/* Centered image */
+/* centered image */
 .img-center {
   display: block;
   margin: 10px auto;  /* centers image horizontally */
