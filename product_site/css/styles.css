@@ -53,5 +53,30 @@ p {
   padding:10px;     /* space inside */
   overflow:auto;    /* handles floats */
 }
+/* IMAGES */
+img {margin:8px;}        /* space so text isn’t stuck to image */
+.img-center {display:block; margin:8px auto; float:none;}
 
-  
+/* make images scale down but not bigger than original */
+img {
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:8px auto;   /* keeps them centered */
+}
+
+/* responsive changes at 600px */
+@media (max-width:600px){
+  /* header links: stack and align left */
+  .header nav a {
+    float:none;
+    display:block;
+    text-align:left;
+  }
+
+  /* content: full width + bigger text */
+  .content {
+    width:100%;
+    font-size:18px;
+  }
+}
