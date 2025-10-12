@@ -25,11 +25,11 @@ p {
 #special-heading {
   color: lightgreen;
 }
-/* HEADER */
+/* header */
 .header {
-  overflow:hidden;   /* clips extra stuff */
+  overflow:hidden;   
   background:navy;   /* background color */
-  padding:10px;      /* some space inside */
+  padding:10px;      
 }
 
 .header .logo {float:left; color:white;}
@@ -47,17 +47,17 @@ p {
 
 /* main content */
 .content {
-  width:80%;        /* take most of the page */
+  width:80%;        
   margin:0 auto;    /* center the box */
-  background:#f2f2f2; /* solid background */
-  padding:10px;     /* space inside */
-  overflow:auto;    /* handles floats */
+  background:#f2f2f2; 
+  padding:10px;     
+  overflow:auto;    
 }
-/* IMAGES */
+/* images */
 img {margin:8px;}        /* space so text isn’t stuck to image */
 .img-center {display:block; margin:8px auto; float:none;}
 
-/* make images scale down but not bigger than original */
+/* make images scale down  */
 img {
   max-width:100%;
   height:auto;
@@ -65,9 +65,9 @@ img {
   margin:8px auto;   /* keeps them centered */
 }
 
-/* responsive changes at 600px */
+
 @media (max-width:600px){
-  /* header links: stack and align left */
+
   .header nav a {
     float:none;
     display:block;
