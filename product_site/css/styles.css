@@ -25,110 +25,33 @@ p {
 #special-heading {
   color: lightgreen;
 }
-/* header container */
+/* HEADER */
 .header {
-  background-color: navy;   /* change background */
-  overflow: hidden;         /* keeps content clipped properly */
-  padding: 15px;            /* spacing inside the header */
+  overflow:hidden;   /* clips extra stuff */
+  background:navy;   /* background color */
+  padding:10px;      /* some space inside */
 }
 
-/* logo styling */
-.logo {
-  float: left;
-  color: white;
-  font-size: 24px;
-  margin-right: 20px;
-}
+.header .logo {float:left; color:white;}
 
-/* navigation links */
 .header nav a {
-  float: right;
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  padding: 10px 15px;
+  float:right;       /* links float */
+  color:white;
+  padding:8px;
+  text-decoration:none;
 }
 
-/* hover effects */
-.header nav a:hover {
-  background-color: white;
-  color: navy;
-}
+.header nav a:hover {background:white; color:navy;}  /* hover effect */
+.header nav a:active {background:gray; color:white;} /* click effect */
+.header nav a.active {background:lightgray; color:black;} /* current page */
 
-/* active (current) page link */
-.header nav a.active {
-  background-color: lightgray;
-  color: black;
-}
-/* main content box */
+/* main content */
 .content {
-  width: 80%;                /* takes 80% of screen */
-  margin: 20px auto;         /* centers content */
-  padding: 20px;             /* spacing inside */
-  background-color: #f9f9f9; /* light background for readability */
-  border: 1px solid #ccc;    /* subtle border */
-  overflow: auto;            /* handles floats/images */
+  width:80%;        /* take most of the page */
+  margin:0 auto;    /* center the box */
+  background:#f2f2f2; /* solid background */
+  padding:10px;     /* space inside */
+  overflow:auto;    /* handles floats */
 }
 
-/* float example for images */
-.content img {
-  float: right;       /* pushes images to the right */
-  margin: 10px;       /* adds space around images */
-}
-
-/* headings inside content */
-.content h1, 
-.content h2, 
-.content h3 {
-  color: navy;
-}
-/* general image styling */
-.content img {
-  margin: 10px;       /* adds space around images */
-  max-width: 300px;   /* keeps images a good size */
-  height: auto;
-}
-
-/* cloat left */
-.img-left {
-  float: left;
-}
-
-/* cloat right */
-.img-right {
-  float: right;
-}
-
-/* centered image */
-.img-center {
-  display: block;
-  margin: 10px auto;  /* centers image horizontally */
-  float: none;        /* prevents floating */
-}
-/* responsive design */
-@media (max-width:600px){
-  .header nav a{
-    float:none;      /* stop floating */
-    display:block;   /* stack links */
-    text-align:left; /* align text */
-  }
-
-  .content{
-    width:100%;      /* full width */
-    font-size:18px;  /* make text a bit larger */
-  }
-
-  .img-left,.img-right{
-    float:none;      /* stop float on small screens */
-    display:block;
-    margin:10px auto; /* center images */
-  }
-}
-
-/* images never bigger than original */
-.content img{
-  max-width:100%;
-  height:auto;
-}
-
-    
+  
