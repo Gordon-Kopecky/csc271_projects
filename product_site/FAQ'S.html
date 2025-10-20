@@ -1,51 +1,82 @@
 <!-- Name: Gordon Kopecky --> 
-<!--Date: october 10th, 2025-->
-<!--FAQ page where students can come ask questions about the product -->
+<!--Date: October 19th, 2025-->
+<!-- FAQ page where students can come ask questions about the product -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css?v=2">
-        <title>Frequently Asked Questions</title> <!--title of page-->
-    </head>
-    <div class="header">
-  <h1 class="logo">My Website</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO meta tags -->
+    <meta name="description" content="Frequently Asked Questions about Study Spot Finder. Learn how students use the site to find quiet study spaces, group-friendly areas, and reviews.">
+    <meta name="keywords" content="study spot FAQ, student study help, best study areas URI, group study campus, study finder questions">
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="FAQ | Study Spot Finder">
+    <meta property="og:description" content="Got questions? Read our FAQ to learn how students find and share the best study spots on campus with Study Spot Finder.">
+    <meta property="og:image" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/Documentation/studyspotimg1.jpg">
+    <meta property="og:url" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/FAQ'S.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <title>FAQ | Study Spot Finder</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRWRJE39VT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KRWRJE39VT');
+    </script>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="logo">Study Spot Finder</h1>
   <nav>
-    <img src="./Documentation/Kopecky_logo.png" alt="Logo" width="50"height="50">
-     <a href="About_us.html">About us page</a> </p>
-     <a href="FAQ'S.html">FAQ's page</a> </p>
-     <a href="reviews.html">Review Page</a> </p>
-     <a href="Welcome_page.html"> Webpage Link</a></p>
+    <img src="./Documentation/Kopecky_logo.png" alt="Study Spot Finder Logo" width="50" height="50">
+    <a href="About_us.html">About Us</a>
+    <a href="FAQ'S.html">FAQ's</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="Welcome_page.html">Welcome</a>
   </nav>
-  </div>
-<div class="content">
-    <body>
-        <h1> Frequently Asked Questions!</h1> <!--main heading for About Us page-->
-        <form> <!--Form for any questions asked + full name -->
-            <label for="name">Full name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="question">Ask a question:</label><br>
-            <input type="text" id="lname" name="question">
-            <input type="submit" value="Submit"> <!--Submit button-->
-        </form>
-        <h2> Different Student Examples:</h2> <!--heading for different examples on where to go-->
-        <table border="1"> <!--Learned this from google: lines for your table to organzize more-->
-                <tr> <!--Table for different students that joined, grade, and why they use this product-->
-                    <th>Name</th>
-                    <th>Grade</th>
-                    <th>Reason for joining</th>
-                </tr>
-                <tr>
-                    <td>James Carter</td>
-                    <td>Junior</td>
-                    <td>Wanted an easy way to find quiet study spots on campus.</td>
-                </tr>
-                <tr>
-                    <td>Ariana Taylor</td>
-                    <td>Freshman</td>
-                    <td>Needed a guide to explore the best places for group work.</td>
-                </tr>
-</table>
-    </body>
 </div>
 
+<div class="content">
+    <h1>Frequently Asked Questions</h1>
+    
+    <form>
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+        <label for="question">Ask a question:</label><br>
+        <textarea id="question" name="question" rows="3" cols="40" placeholder="Type your question here"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h2>Student Examples</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Reason for Joining</th>
+        </tr>
+        <tr>
+            <td>James Carter</td>
+            <td>Junior</td>
+            <td>Wanted an easy way to find quiet study spots on campus.</td>
+        </tr>
+        <tr>
+            <td>Ariana Taylor</td>
+            <td>Freshman</td>
+            <td>Needed a guide to explore the best places for group work.</td>
+        </tr>
+    </table>
+</div>
+</body>
 </html>
