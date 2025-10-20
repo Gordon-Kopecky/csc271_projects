@@ -1,46 +1,43 @@
 <!-- Name: Gordon Kopecky --> 
-<!--Date: october 10th, 2025-->
-<!--Review page where students can come review different spots or give different ratings of other spots -->
+<!-- Date: October 10th, 2025 -->
+<!-- Review page where students can come review different spots or give different ratings of other spots -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css?v=2">
-    </head>
-   <div class="header">
-  <h1 class="logo">My Website</h1>
-  <nav>
-    <img src="./Documentation/Kopecky_logo.png" alt="Logo" width="50"height="50">
-     <a href="About_us.html">About us page</a> </p>
-     <a href="FAQ'S.html">FAQ's page</a> </p>
-     <a href="reviews.html">Review Page</a> </p>
-     <a href="Welcome_page.html"> Webpage Link</a></p>
-  </nav>
-  </div>
-  <div class="content">
-    <title> Review Page</title> <!--title for review page-->
-    <body>
-        <h1> Review Page!</h1> <!--main heading for review page-->
-        <strong> Rate Our Page!</strong> <!--bold lettering for rate our page-->
-        <br>
-    <input type="radio" name="Rate 1-5" value="1"> 1<br> <!--radio for a rating of how people like our page-->
-    <input type="radio" name="Rate 1-5" value="2"> 2<br>
-    <input type="radio" name="Rate 1-5" value="3"> 3<br>
-    <input type="radio" name="Rate 1-5" value="4"> 4<br>
-    <input type="radio" name="Rate 1-5" value="5"> 5<br>
-    <input type="submit" value="Submit"> <!--submit button-->
-    </br>  
-    </body>
-    <body>
-        <h2> Leave A review!</h2> <!--leave a review section made with a form. -->
-        <form>
-            <label for="name">Full name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="review">Leave a review:</label><br>
-            <input type="text" id="lname" name="review">
-            <input type="submit" value="Submit">
-        </form>
-    </body>
-</div>
+  <head>
+    <link rel="stylesheet" href="css/styles.css?v=2">
+    <title>Review Page</title> <!-- title for review page -->
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="logo">My Website</h1>
+      <nav>
+        <img src="./Documentation/Kopecky_logo.png" alt="Logo" width="50" height="50">
+        <a href="About_us.html">About us page</a>
+        <a href="FAQ'S.html">FAQ's page</a>
+        <a href="reviews.html">Review Page</a>
+        <a href="Welcome_page.html">Webpage Link</a>
+      </nav>
+    </div>
 
+    <div class="content">
+      <h1>Review Page!</h1> <!-- main heading for review page -->
+      <strong>Rate Our Page!</strong> <!-- bold lettering for rate our page -->
+      <br>
+      <input type="radio" name="Rate" value="1"> 1<br>
+      <input type="radio" name="Rate" value="2"> 2<br>
+      <input type="radio" name="Rate" value="3"> 3<br>
+      <input type="radio" name="Rate" value="4"> 4<br>
+      <input type="radio" name="Rate" value="5"> 5<br>
+      <input type="submit" value="Submit"> <!-- submit button -->
 
+      <h2>Leave A Review!</h2> <!-- leave a review section made with a form -->
+      <form>
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="review">Leave a review:</label><br>
+        <input type="text" id="review" name="review">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
 </html>
