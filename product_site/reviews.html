@@ -1,43 +1,74 @@
 <!-- Name: Gordon Kopecky --> 
-<!-- Date: October 10th, 2025 -->
+<!--Date: October 19th, 2025-->
 <!-- Review page where students can come review different spots or give different ratings of other spots -->
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO meta tags -->
+    <meta name="description" content="Share your reviews and rate the best study spots on campus. Help fellow students find the top places to study.">
+    <meta name="keywords" content="study spot reviews, student study ratings, best study spots URI, campus study feedback, study finder reviews">
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Student Reviews | Study Spot Finder">
+    <meta property="og:description" content="Rate and review the top study spots on campus. Share your feedback and help others discover the best study spaces.">
+    <meta property="og:image" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/Documentation/studyspotimg2.jpg">
+    <meta property="og:url" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/reviews.html">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="css/styles.css?v=2">
-    <title>Review Page</title> <!-- title for review page -->
-  </head>
-  <body>
-    <div class="header">
-      <h1 class="logo">My Website</h1>
-      <nav>
-        <img src="./Documentation/Kopecky_logo.png" alt="Logo" width="50" height="50">
-        <a href="About_us.html">About us page</a>
-        <a href="FAQ'S.html">FAQ's page</a>
-        <a href="reviews.html">Review Page</a>
-        <a href="Welcome_page.html">Webpage Link</a>
-      </nav>
-    </div>
+    <title>Reviews | Study Spot Finder</title>
 
-    <div class="content">
-      <h1>Review Page!</h1> <!-- main heading for review page -->
-      <strong>Rate Our Page!</strong> <!-- bold lettering for rate our page -->
-      <br>
-      <input type="radio" name="Rate" value="1"> 1<br>
-      <input type="radio" name="Rate" value="2"> 2<br>
-      <input type="radio" name="Rate" value="3"> 3<br>
-      <input type="radio" name="Rate" value="4"> 4<br>
-      <input type="radio" name="Rate" value="5"> 5<br>
-      <input type="submit" value="Submit"> <!-- submit button -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRWRJE39VT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      <h2>Leave A Review!</h2> <!-- leave a review section made with a form -->
-      <form>
-        <label for="name">Full name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="review">Leave a review:</label><br>
-        <input type="text" id="review" name="review">
+    gtag('config', 'G-KRWRJE39VT');
+    </script>
+</head>
+
+<body>
+<div class="header">
+  <h1 class="logo">Study Spot Finder</h1>
+  <nav>
+    <img src="./Documentation/Kopecky_logo.png" alt="Study Spot Finder Logo" width="50" height="50">
+    <a href="About_us.html">About Us</a>
+    <a href="FAQ'S.html">FAQ's</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="Welcome_page.html">Welcome</a>
+  </nav>
+</div>
+
+<div class="content">
+    <h1>Student Reviews</h1> <!-- Main heading -->
+    <strong>Rate Our Page!</strong>
+    <br>
+    <form>
+        <input type="radio" name="rating" value="1"> 1<br>
+        <input type="radio" name="rating" value="2"> 2<br>
+        <input type="radio" name="rating" value="3"> 3<br>
+        <input type="radio" name="rating" value="4"> 4<br>
+        <input type="radio" name="rating" value="5"> 5<br>
         <input type="submit" value="Submit">
-      </form>
-    </div>
-  </body>
+    </form>
+
+    <hr>
+
+    <h2>Leave a Review!</h2>
+    <form>
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br>
+
+        <label for="review">Leave a review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="40" placeholder="Write your review here"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
 </html>

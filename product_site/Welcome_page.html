@@ -1,59 +1,83 @@
 <!-- Name: Gordon Kopecky --> 
-<!-- Date: October 10th, 2025 -->
-<!-- Study Spot Finder webpage for listing and promoting study spaces with reviews and ratings -->
+<!--Date: October 19th, 2025-->
+<!-- Study Spot Finder webpage for listing and promoting study spaces with reviews and ratings-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css?v=2"> <!-- link to css file: my updated css file was not loading onto my live website, this is something i looked up to help update my css  -->
-    <title>Welcome Page</title> <!-- Title of page: not shown on website -->
-  </head>
-  <body>
-    <div class="header">
-      <img src="./Documentation/Kopecky_logo.png" alt="Logo" width="50" height="50">
-      <nav>
-        <a href="About_us.html">About us page</a>
-        <a href="FAQ'S.html">FAQ's page</a>
-        <a href="reviews.html">Review Page</a>
-        <a href="Welcome_page.html">Webpage Link</a>
-      </nav>
-    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO meta tags -->
+    <meta name="description" content="Study Spot Finder helps URI students discover the best study spots on campus including quiet corners, group-friendly areas, and cafes.">
+    <meta name="keywords" content="study spots URI, quiet study areas, campus study guide, group study rooms, best places to study college">
+    
+    <!-- open graph tags for social media sharing -->
+    <meta property="og:title" content="Best Study Spots on Campus | Study Spot Finder">
+    <meta property="og:description" content="Explore the top study spaces on campus. Quiet corners, group-friendly areas, and student reviews to guide your next study session.">
+    <meta property="og:image" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/Documentation/studyspotimg1.jpg">
+    <meta property="og:url" content="https://gordonkopecky.rhody.dev/GordonRepo/product_site/Welcome_page.html">
+    <meta property="og:type" content="website">
 
-    <div class="content">
-      <h1>Welcome to my product page!!</h1> <!-- Main Heading -->
-      <img src="./Documentation/Kopecky_logo.png" alt="Logo" class="img-center" width="200" height="200">
+    <link rel="stylesheet" href="css/styles.css?v=2"> <!-- link to css file -->
+    <title>Welcome Page | Study Spot Finder</title> <!-- Title for browser + SEO -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRWRJE39VT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      <hr>
-      <h2>Welcome to the newest Study Spot Finder</h2> <!-- 1st subsection -->
-      <strong>About Us:</strong> <!-- Bold lettering using the strong instead of b -->
+    gtag('config', 'G-KRWRJE39VT');
+    </script>
+</head>
 
-      <p>
-        Study Spot Finder is a simple and easy-to-use tool that helps students discover the best places to study around campus. 
-        Whether you prefer a quiet corner in the library, a lively cafe, or a group-friendly spot, our page makes it easy to find a location that matches your needs.
-      </p>
-      <img src="./Documentation/studyspotimg1.jpg" alt="image 1" class="img-center" width="300" height="200"> 
+<body>
+<div class="header">
+  <img src="./Documentation/Kopecky_logo.png" alt="Study Spot Finder Logo" width="50" height="50">
+  <nav>
+    <a href="About_us.html">About Us</a>
+    <a href="FAQ'S.html">FAQ's</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="Welcome_page.html">Welcome</a>
+  </nav>
+</div>
 
-      <hr>
-      <strong>Features:</strong>
-      <p>
-        With Study Spot Finder, you will save time searching and spend more time focusing on what matters most, your studies. 
-        Our platform highlights the most comfortable, convenient, and student-approved study spaces, making it the perfect guide to boost your productivity and success.
-      </p>
+<div class="content">
+    <h1>Welcome to my product page!!</h1> <!-- Main Heading -->
+    <img src="./Documentation/Kopecky_logo.png" alt="Study Spot Finder Logo Large" class="img-center" width="200" height="200"> 
 
-      <h3>How it works</h3>
-      <ul>
+    <hr>
+    <h2>Welcome to the newest Study Spot Finder</h2>
+    <strong>About Us:</strong>
+
+    <p>Study Spot Finder is a simple and easy-to-use tool that helps students discover the best places to study around campus. 
+       Whether you prefer a quiet corner in the library, a lively cafe, or a group-friendly spot, our page makes it easy to find a location that matches your needs.</p>
+    <img src="./Documentation/studyspotimg1.jpg" alt="Students studying in a quiet campus spot" class="img-center" width="300" height="200"> 
+    
+    <hr>
+    <strong>Features:</strong>
+    <p>With Study Spot Finder, you will save time searching and spend more time focusing on what matters most, your studies. 
+       Our platform highlights the most comfortable, convenient, and student approved study spaces, making it the perfect guide to boost your productivity and success.</p>
+    
+    <p><em>How it works</em></p>
+    <ul>
         <li>Find quiet study spots on campus</li>
         <li>Discover group friendly spaces</li>
         <li>Check out other ratings from fellow students</li>
         <li>See opening hours and Wifi availability</li>
-      </ul>
-      <img src="./Documentation/studyspotimg2.jpg" alt="image 2" class="img-center" width="300" height="200"> 
+    </ul>
 
-      <hr>
-      <h3>Links</h3> <!-- links to this website, a similar website, and my email -->
-      <p><strong>Tour of Engineering Building: Great Study Spot!</strong></p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xDwgBJb2Ih4?si=1C95esuQY5215Peq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p><a href="https://www.yelp.com/">Similar Page to Ours</a></p>
-      <p><a href="mailto:gordon.kopecky@uri.edu">Email us here</a></p> <!-- google helped me find out how to add the email in html -->
-    </div>
-  </body>
+    <img src="./Documentation/studyspotimg2.jpg" alt="Group of students studying together" class="img-center" width="300" height="200"> 
+    
+    <hr>
+    <h3>Links</h3>
+    <p><strong>Tour of Engineering Building: Great Study Spot!</strong></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xDwgBJb2Ih4?si=1C95esuQY5215Peq" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+    <p><a href="https://www.yelp.com/">Similar Page to Ours</a></p>
+    <p><a href="mailto:gordon.kopecky@uri.edu">Email us here</a></p>
+</div>
+</body>
 </html>
