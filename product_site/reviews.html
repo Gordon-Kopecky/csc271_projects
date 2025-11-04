@@ -54,9 +54,12 @@
         <input type="radio" name="rating" value="3"> 3<br>
         <input type="radio" name="rating" value="4"> 4<br>
         <input type="radio" name="rating" value="5"> 5<br>
-        <input type="submit" value="Submit">
-    </form>
+        <button id="rateBtn" type="button">Submit</button>
 
+    </form>
+    
+      <p id="ratingMessage"></p>
+      <p class="average-text"></p>
     <hr>
 
     <h2>Leave a Review!</h2>
@@ -67,8 +70,12 @@
         <label for="review">Leave a review:</label><br>
         <textarea id="review" name="review" rows="4" cols="40" placeholder="Write your review here"></textarea><br>
 
-        <input type="submit" value="Submit">
+        <button id="reviewBtn" type="button">Submit</button>
     </form>
+    <p id="reviewMessage"></p>
+    <div id="allReviews"></div>
 </div>
+<script src="js/rating.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>
