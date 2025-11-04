@@ -55,6 +55,26 @@
     <img src="./Documentation/studyspotimg1.jpg" alt="Students studying in a quiet campus spot" class="img-center" width="300" height="200"> 
     
     <hr>
+    <h2>Find Your Ideal Study Spot!</h2>
+
+  <form id="spotForm">
+    <p>Do you need silence?</p>
+    <label><input type="radio" name="silent" value="yes"> Yes</label>
+    <label><input type="radio" name="silent" value="no"> No</label>
+
+    <p>Do you need outlets?</p>
+    <label><input type="radio" name="outlets" value="yes"> Yes</label>
+    <label><input type="radio" name="outlets" value="no"> No</label>
+
+    <p>Do you want food nearby?</p>
+    <label><input type="radio" name="food" value="yes"> Yes</label>
+    <label><input type="radio" name="food" value="no"> No</label>
+
+    <button id="findSpotBtn" type="button">Find My Study Spot</button>
+  </form>
+    <hr>
+<p id="spotResult"></p>
+
     <strong>Features:</strong>
     <p>With Study Spot Finder, you will save time searching and spend more time focusing on what matters most, your studies. 
        Our platform highlights the most comfortable, convenient, and student approved study spaces, making it the perfect guide to boost your productivity and success.</p>
@@ -79,5 +99,6 @@
     <p><a href="https://www.yelp.com/">Similar Page to Ours</a></p>
     <p><a href="mailto:gordon.kopecky@uri.edu">Email us here</a></p>
 </div>
+<script src="js/spot-selector.js"></script>
 </body>
 </html>
